@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/style.css">
+    <title>Decodificador</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <img class="cabecalho__menu__logo" src="src/img/Logo Alura.png">
+        </nav>
+    </header>
+
+    <main class="apresentacao">
+        <section class="apresentacao__conteudo">
+            <textarea oninput="validateTextarea()" placeholder="Digite seu texto" id="text" class="apresentacao__conteudo__msg"></textarea>
+            <p class="apresentacao__conteudo__aviso"><img src="src/img/Exclamation Circle.jpg" alt="Imagem de exclamação">Apenas letras minúsculas e sem acento.</p>
+            <div class="apresentacao__conteudo__botoes">
+                <button onclick="encrypt()" id="encryptButton" class="apresentacao__conteudo__botoes__criptografar">Criptografar</button>
+                <button onclick="decrypt()" id="decryptButton" class="apresentacao__conteudo__botoes__descriptografar">Descriptografar</button>
+            </div>
+        </section>
+        <section class="descriptografar">
+            <img src="src/img/Women.jpg" id="imgWomen" class="descriptografar__img">
+            <h2 id="noMsg" class="descriptografar__titulo">Nenhuma mensagem encontrada</h2>
+            <p id="warningDecryption" class="descriptografar__msg">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <textarea id="translatedText" readonly class="descriptografar__texto"></textarea>
+            <button onclick="copy()" id="copyButton" class="descriptografar__botao__copiar">Copiar</button>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por João Ricardo Criminácio.</p>
+    </footer>
+
+    <script src="src/scripts/script.js"></script>
+</body>
+</html>
