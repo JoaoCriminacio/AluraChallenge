@@ -77,7 +77,7 @@ body{
     height: 67px;
     border: 1px solid #0A3871;
     border-radius: 24px;
-    font-size: 16px;
+    font-size: 1rem;
     color: #FFFFFF;
     cursor: pointer;
 }
@@ -88,7 +88,7 @@ body{
     height: 67px;
     border: 1px solid #0A3871;
     border-radius: 24px;
-    font-size: 16px;
+    font-size: 1rem;
     color: #0A3871;
     cursor: pointer;
 }
@@ -142,7 +142,7 @@ body{
     height: 67px;
     border: 1px solid #0A3871;
     border-radius: 24px;
-    font-size: 16px;
+    font-size: 1rem;
     color: #0A3871;
     cursor: pointer;
     display: none;
@@ -169,8 +169,34 @@ body{
         margin-top: 5%;
     }
 
+    .descriptografar__texto{
+        width: 208px;
+        height: 400px;
+    }
+
     .descriptografar__botao__copiar{
         width: auto;
         padding: 0% 40% 0% 40%;
     }
+}
+
+@media (max-width: 550px){
+    .apresentacao__conteudo{
+        width: 100%;
+    }
+    
+    .descriptografar{
+        width: 100%;
+    }
+    
+    .warningImg{
+        height: 20px;
+        margin-top: 2%;
+    }
+
+    .descriptografar__img{
+        width: 276px;
+        height: 244px;
+    }
+
 }
